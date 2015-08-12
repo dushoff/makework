@@ -7,15 +7,16 @@ target pngtarget pdftarget vtarget acrtarget: notarget
 
 # make files
 
-Sources = Makefile 
+Sources = Makefile inc.mk
 
 ##################################################################
 
 md = ../make/
 rrd = ../RR/
+mwd = ../makework/
 
 local = default
 -include $(md)/local.mk
 -include $(md)/$(local).mk
--include $(rrd)/inc.mk
+-include $(mwd)/inc.mk
 
